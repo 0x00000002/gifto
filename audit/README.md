@@ -38,30 +38,6 @@ The audit report is focused on the following key areas - though this is not an e
 
 <br>
 
-## Focus Areas
-The audit report is focused on the following key areas - though this is not an exhaustive list.
-### Correctness
-- No correctness defects uncovered during static analysis?
-- No implemented contract violations uncovered during execution?
-- No other generic incorrect behaviour detected during execution?
-- Adherence to adopted standards such as ERC20?
-### Testability
-- Test coverage across all functions and events?
-- Test cases for both expected behaviour and failure modes?
-- Settings for easy testing of a range of parameters?
-- No reliance on nested callback functions or console logs?
-- Avoidance of test scenarios calling other test scenarios?
-### Security
-- No presence of known security weaknesses?
-- No funds at risk of malicious attempts to withdraw/transfer?
-- No funds at risk of control fraud?
-- Prevention of Integer Overflow or Underflow?
-### Best Practice
-- Explicit labeling for the visibility of functions and state variables?
-- Proper management of gas limits and nested execution?
-- Latest version of the Solidity compiler?
-
-<br>
 
 ## Classification
 ### Defect Severity
@@ -72,16 +48,39 @@ The audit report is focused on the following key areas - though this is not an e
 
 <br>
 
-## Findings
 
+## Findings
 ### Minor
-- **var's should be in mixedCase** - `Best practice` Examples: [#L5, 20](https://github.com/tikonoff/rootcore/blob/master/contracts/helpers/Migrations.sol) .. [View on Github](https://github.com/tikonoff/rootcore/issues/1)
+<!--- **Tokens are not automatically transferred to investors** - `Best practice` To receive a token, the investor must `buyGifto`, and then the owner of the contract must run the `deliveryToken` function to send the investor tokens. This is a manual process so there is no guarantee for the investor that they will receive their tokens other than trust. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/12)
+
+- **Removal of setMinimumBuy without removing relevant variables** - `Best practice` We would recommend that if the intention is not to make use of the removed function setMinimumBuy, that you remove these unused variables. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/16)
+
+- **The 'onlyNotOwner' modifier is not used in the contracts** - `Best practice` There is a modifier `onlyNotOwner` which is not used by any function, this can be removed. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/13)
+
+- **Explicitly declare your variable types** - `Best practice` `uint` will default to `uint256` but it is recommended to explicitly declare it as `uint256`  [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/9)
+
+- **Explicitly declare your variables access modifiers** - `Best practice` You should explicitly declare `public` on the variables that are meant to be `public`. This can help to avoid errors, but it can also cause unexpected behaviour.  [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/8)
+
+- **Format repository to follow standard convention (add folders, separate files)** - `Best practice` We strongly recommend restructuring the files in your repo to follow conventional approach of other token launches. This is so that relevant files can be more easily found and increases trransparency See here for examples:    [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/1)
+-->
+
+- **[Some comments are obsolete](https://github.com/tikonoff/gifto/issues/2)** - `Best practice`
+- **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability`
+- **[No "view" or "pure" modifiers](https://github.com/tikonoff/gifto/issues/4)** - `Best practice`,`Correctness`
+- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+
 
 ### Moderate
-- None found
-
+- **[No SafeMath Library used](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/5)** `Best practice`, `Correctness`
+  
 ### Major
-- None found
+- **[Re-entrance issue is possible](https://github.com/tikonoff/gifto/issues/1)** - `Best practice`,`Security` 
+
 
 ### Critical
 - None found
