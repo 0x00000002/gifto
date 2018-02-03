@@ -65,7 +65,8 @@ The audit report is focused on the following key areas - though this is not an e
 -->
 
 - **[Misleading comments](https://github.com/tikonoff/gifto/issues/2)** - `Best practice` - Lines: [220](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L220)
-- **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice` - **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability` - Lines: [xxx]()
+- **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability` - Lines: [xxx]()
 - **[No "view" or "pure" modifiers](https://github.com/tikonoff/gifto/issues/4)** - `Best practice`,`Correctness` - Lines: [230](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L230), [239](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L239), [249](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L249)
 - **[Declaration shadows a builtin symbols](https://github.com/tikonoff/gifto/issues/6)** - `Testability` - Line: [579](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L579)
 - **[Implicit storage declaration](https://github.com/tikonoff/gifto/issues/7)** - `Correctness` - Line: [579](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L579)
