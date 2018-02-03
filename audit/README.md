@@ -64,22 +64,19 @@ The audit report is focused on the following key areas - though this is not an e
 - **Format repository to follow standard convention (add folders, separate files)** - `Best practice` We strongly recommend restructuring the files in your repo to follow conventional approach of other token launches. This is so that relevant files can be more easily found and increases trransparency See here for examples:    [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/1)
 -->
 
-- **[Some comments are obsolete](https://github.com/tikonoff/gifto/issues/2)** - `Best practice`
-- **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
-- **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability`
-- **[No "view" or "pure" modifiers](https://github.com/tikonoff/gifto/issues/4)** - `Best practice`,`Correctness`
-- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
-- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
-- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
-- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
-- **[](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
+- **[Misleading comments](https://github.com/tikonoff/gifto/issues/2)** - `Best practice` - Lines: [220](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L220)
+- **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice` - **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability` - Lines: [xxx]()
+- **[No "view" or "pure" modifiers](https://github.com/tikonoff/gifto/issues/4)** - `Best practice`,`Correctness` - Lines: [230](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L230), [239](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L239), [249](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L249)
+- **[Declaration shadows a builtin symbols](https://github.com/tikonoff/gifto/issues/6)** - `Testability` - Line: [579](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L579)
+- **[Implicit storage declaration](https://github.com/tikonoff/gifto/issues/7)** - `Correctness` - Line: [579](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L579)
+- **[Push instead pull for internal call](https://github.com/tikonoff/gifto/issues/8)** - `Correctness` - Line: [155](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L155)
 
 
 ### Moderate
-- **[No SafeMath Library used](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/5)** `Best practice`, `Correctness`
+- **[No SafeMath Library used](https://github.com/tikonoff/gifto/issues/5)** `Best practice`, `Correctness`
   
 ### Major
-- **[Re-entrance issue is possible](https://github.com/tikonoff/gifto/issues/1)** - `Best practice`,`Security` 
+- **[Race Condition is possible](https://github.com/tikonoff/gifto/issues/1)** - `Best practice`,`Security` 
 
 
 ### Critical
