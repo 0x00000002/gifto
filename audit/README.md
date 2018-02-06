@@ -50,14 +50,14 @@ The audit report is focused on the following key areas - though this is not an e
 
 
 ## Findings
+
+List of all issues: [Github](https://github.com/tikonoff/gifto/issues)
+
 ### Minor
 <!--
-
-
 - **Removal of setMinimumBuy without removing relevant variables** - `Best practice` We would recommend that if the intention is not to make use of the removed function setMinimumBuy, that you remove these unused variables. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/16)
-
-- **Format repository to follow standard convention (add folders, separate files)** - `Best practice` We strongly recommend restructuring the files in your repo to follow conventional approach of other token launches. This is so that relevant files can be more easily found and increases trransparency See here for examples:    [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/1)
 -->
+
 
 - **[Misleading comments](https://github.com/tikonoff/gifto/issues/2)** - `Best practice` - Lines: [220](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L220)
 - **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
