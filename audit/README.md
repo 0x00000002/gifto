@@ -70,7 +70,7 @@ The audit report is focused on the following key areas - though this is not an e
 - **[Lock pragma to specific compiler version](https://github.com/tikonoff/gifto/issues/11)** - `Best practice`
 - **[Explicit UINT256 vs UINT](https://github.com/tikonoff/gifto/issues/12)** - `Correctness`, `Testability`, `Best practice` - Lines: [358](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L358),  [375](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L375),  [381](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L381),  [404](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L404)
 - **["Constant" is deprecated](https://github.com/tikonoff/gifto/issues/13)** - `Correctness` - Lines: [666](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L666),  [12](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L12),  [171](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L171)
-- **[Explicitly declare your variables access modifiers](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/14)** - `Best practice` - Line: [444](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L444)
+- **[Explicitly declare your variables access modifiers](https://github.com/tikonoff/gifto/issues/14)** - `Best practice` - Line: [444](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L444)
 
 
 ### Moderate
