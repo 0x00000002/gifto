@@ -82,8 +82,9 @@ List of all issues: [Github](https://github.com/tikonoff/gifto/issues)
 - **[Insufficient gas for the Fallback functions](https://github.com/tikonoff/gifto/issues/10)** - `Best practice` - Lines: [125](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L125), [444](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L444)
 - **[Integer overflow and underflow](https://github.com/tikonoff/gifto/issues/15)** - `Security` - Line: [141](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L141)
 - **[Code style inconsistence](https://github.com/tikonoff/gifto/issues/17)** - `Correctness` - Lines: [36](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L36), [460](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L460), [214](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L214), [37](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L37), [39](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L39), [40](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L40), [358](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L358)
-- **[Absence of the Documentation](https://github.com/tikonoff/gifto/issues/18)** - `Testability`
-- **[No risks management detected](https://github.com/tikonoff/gifto/issues/20)** - `Testability`
+- **[Absence of the Documentation](https://github.com/tikonoff/gifto/issues/18)** - `Best practice`
+- **[No risks management detected](https://github.com/tikonoff/gifto/issues/20)** - `Best practice`
+- **[The contract is not upgradable](https://github.com/tikonoff/gifto/issues/19)** - `Best practice`
 
  
 ### Major
