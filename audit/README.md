@@ -2,7 +2,7 @@
 <br>
 
 ## Preamble
-This audit report was undertaken by BlockchainLabs.nz for the purpose of providing feedback to Gifto Limited. It has subsequently been shared publicly without any express or implied warranty.
+This audit report was undertaken by <b>BlockchainLabs.nz</b> for the purpose of providing feedback to <b>Gifto Limited</b>. <br>It has subsequently been shared publicly without any express or implied warranty.
 
 Solidity contracts were sourced from the public Github repo [github.com/gifto-io/GiftoSmartContract](https://github.com/gifto-io/GiftoSmartContract) prior to commit [cf1ca1e108b3b616691761c52410756de437cb67](https://github.com/gifto-io/GiftoSmartContract/commit/cf1ca1e108b3b616691761c52410756de437cb67) - we would encourage all community members and token holders to make their own assessment of the contracts.
 
@@ -51,34 +51,36 @@ The audit report is focused on the following key areas - though this is not an e
 
 ## Findings
 ### Minor
-<!--- **Tokens are not automatically transferred to investors** - `Best practice` To receive a token, the investor must `buyGifto`, and then the owner of the contract must run the `deliveryToken` function to send the investor tokens. This is a manual process so there is no guarantee for the investor that they will receive their tokens other than trust. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/12)
+<!--
+
 
 - **Removal of setMinimumBuy without removing relevant variables** - `Best practice` We would recommend that if the intention is not to make use of the removed function setMinimumBuy, that you remove these unused variables. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/16)
-
-- **The 'onlyNotOwner' modifier is not used in the contracts** - `Best practice` There is a modifier `onlyNotOwner` which is not used by any function, this can be removed. [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/13)
-
-- **Explicitly declare your variable types** - `Best practice` `uint` will default to `uint256` but it is recommended to explicitly declare it as `uint256`  [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/9)
-
-- **Explicitly declare your variables access modifiers** - `Best practice` You should explicitly declare `public` on the variables that are meant to be `public`. This can help to avoid errors, but it can also cause unexpected behaviour.  [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/8)
 
 - **Format repository to follow standard convention (add folders, separate files)** - `Best practice` We strongly recommend restructuring the files in your repo to follow conventional approach of other token launches. This is so that relevant files can be more easily found and increases trransparency See here for examples:    [View on GitHub](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/1)
 -->
 
 - **[Misleading comments](https://github.com/tikonoff/gifto/issues/2)** - `Best practice` - Lines: [220](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L220)
 - **[Folder structure has missed](https://github.com/tikonoff/gifto/issues/)** - `Best practice`
-- **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability` - Lines: [xxx]()
+- **[Old files are presented](https://github.com/tikonoff/gifto/issues/3)** - `Testability`
 - **[No "view" or "pure" modifiers](https://github.com/tikonoff/gifto/issues/4)** - `Best practice`,`Correctness` - Lines: [230](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L230), [239](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L239), [249](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L249)
 - **[Declaration shadows a builtin symbols](https://github.com/tikonoff/gifto/issues/6)** - `Testability` - Line: [579](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L579)
 - **[Implicit storage declaration](https://github.com/tikonoff/gifto/issues/7)** - `Correctness` - Line: [579](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L579)
 - **[Push instead pull for internal call](https://github.com/tikonoff/gifto/issues/8)** - `Correctness` - Line: [155](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L155)
+- **[Differentiate functions and events](https://github.com/tikonoff/gifto/issues/9)** - `Testability`, `Best practice` - Line: [30](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L30), [33](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L33), [360](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L360)
+- **[Lock pragma to specific compiler version](https://github.com/tikonoff/gifto/issues/11)** - `Best practice`
+- **[Explicit UINT256 vs UINT](https://github.com/tikonoff/gifto/issues/12)** - `Correctness`, `Testability`, `Best practice` - Lines: [358](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L358),  [375](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L375),  [381](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L381),  [404](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L404)
+- **["Constant" is deprecated](https://github.com/tikonoff/gifto/issues/13)** - `Correctness` - Lines: [666](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L666),  [12](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L12),  [171](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L171)
+- **[Explicitly declare your variables access modifiers](https://github.com/BlockchainLabsNZ/gifto-contracts/issues/14)** - `Best practice` - Line: [444](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L444)
 
 
 ### Moderate
 - **[No SafeMath Library used](https://github.com/tikonoff/gifto/issues/5)** `Best practice`, `Correctness`
-  
+- **[Insufficient gas for the Fallback functions](https://github.com/tikonoff/gifto/issues/10)** - `Correctness`, `Best practice` - Lines: [125](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L125), [444](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L444)
+- **[Integer overflow and underflow](https://github.com/tikonoff/gifto/issues/15)** - `Correctness`, `Best practice` - Line: [141](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L141)
+ 
 ### Major
-- **[Race Condition is possible](https://github.com/tikonoff/gifto/issues/1)** - `Best practice`,`Security` 
-
+- **[Race Condition is possible](https://github.com/tikonoff/gifto/issues/1)** - `Best practice`,`Security` - Line: [132](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L132)
+- **[DoS with block gas limit](https://github.com/tikonoff/gifto/issues/16)** - `Best practice` - Line: [291](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L291)
 
 ### Critical
 - None found
@@ -93,16 +95,23 @@ Coverage: ???%
 
 Build: [travis-ci.org/gabriel-canaan/gifto/builds/1234](https://travis-ci.org/)
 
+<br>
+
 ## Gas Consumption
 
 Upon finalization of the contracts to be used by Gifto, the contracts were assessed on the gas usage of each function to ensure there aren't any unforeseen issues with exceeding the block size GasLimit. A detailed report can be found in [./Gas_Consumption.md](https://github.com/tikonoff/gifto/blob/master/audit/Gas_consumption_report.md).
 
+<br>
 
 ## Functional tests
 
 Functions were tested according the business scenario and available here [./kovan-functional-tests.md](https://github.com/tikonoff/gifto/blob/master/audit/kovan-functional-tests.md)
 
+<br>
+
 
 ## Conclusion
 Of the issues we have raised all of them are minor. 
 This crowdsale has a low risk of ethereum being hacked or stolen.
+
+<br>
