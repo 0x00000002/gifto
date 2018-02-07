@@ -1,7 +1,6 @@
 # Functional tests
 Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
 
-<font color=red>asdfas</font>
 <br>
 
 # Gifto.sol [0x52E268](https://kovan.etherscan.io/address/0x52E268d6e557A0Ac0D5bA947879776116f57723D)
@@ -78,7 +77,7 @@ Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
 
 ### Contract owner
  - [ ] Turn on sales when it is already on.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
-<font color="#ff0000">Suggest to verify the variable status before turn it on. Or you just lose your gas if it is already on.</font>
+<b>Suggest to verify the variable status before turn it on. Or you just lose your gas if it is already on.</b>
  - [ ] Turn off sales when it is already off.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
  **Suggest to verify the variable status before turn it off. Or you just lose your gas if it is already off.**
  - [x] Transfer tokens from one investor to another without enough allowance. [0xf8df16](https://kovan.etherscan.io/tx/0xf8df16329984d6906d0bee6086e29fbe11b4d0ed6f78e482d226065099692637)
