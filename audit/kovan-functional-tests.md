@@ -1,6 +1,7 @@
 # Functional tests
 Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
 
+<font color=red>asdfas</font>
 <br>
 
 # Gifto.sol [0x52E268](https://kovan.etherscan.io/address/0x52E268d6e557A0Ac0D5bA947879776116f57723D)
