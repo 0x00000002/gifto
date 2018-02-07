@@ -77,9 +77,9 @@ Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
 
 ### Contract owner
  - [ ] Turn on sales when it is already on.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
- **Suggest to verify the variable status before turn it on. Or you just lose your gas if it is already on.**
+ **[Issue](https://github.com/tikonoff/gifto/issues/22)**
  - [ ] Turn off sales when it is already off.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
- **Suggest to verify the variable status before turn it off. Or you just lose your gas if it is already off.**
+ **[Issue](https://github.com/tikonoff/gifto/issues/22)**
  - [x] Transfer tokens from one investor to another without enough allowance. [0xf8df16](https://kovan.etherscan.io/tx/0xf8df16329984d6906d0bee6086e29fbe11b4d0ed6f78e482d226065099692637)
 
 ### Investor
@@ -106,5 +106,5 @@ Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
  - [x] Transfer an investor's tokens to others.[0xe5c347](https://kovan.etherscan.io/tx/0xe5c3476c3bcccb06c04163e88f4cd502369e7bbedea9eeb806cf538393a5c09a)
  - [x] Buy Gifto tokens with ETH.[0x44459a](https://kovan.etherscan.io/tx/0x44459ab7af839d2bb5234287c63c1b8b96d671bea2c5223bae69c42eb767f8aa)
  - [x] Transfer their own tokens to others.[0xf73ec8](https://kovan.etherscan.io/tx/0xf73ec878e9941567e17457c7585e2656babefec0db4ad2bd54da697222f557b6)
- - [ ] Set allowance to a specific spender for his own account so that the spender can withdraw tokens under this allowance and transfer to spender's account.[0xc03dba](https://kovan.etherscan.io/tx/0xc03dbacddd3cb4279331b4bc1996e3f596123a0f2fdda8b80f4ec28b3bea44a9) **Suggest only allow investor to do this action.**
- - [ ] Withdraw tokens from another investor's account under his allowance.[0x1e5d97](https://kovan.etherscan.io/tx/0x1e5d97002d2cc2e1a139f7f36239959d68e717b35f198ca65376f1b59cabf135) **Suggest only allow investor to do this action.**
+ - [ ] Set allowance to a specific spender for his own account so that the spender can withdraw tokens under this allowance and transfer to spender's account.[0xc03dba](https://kovan.etherscan.io/tx/0xc03dbacddd3cb4279331b4bc1996e3f596123a0f2fdda8b80f4ec28b3bea44a9) **[Issue](https://github.com/tikonoff/gifto/issues/23)**
+ - [ ] Withdraw tokens from another investor's account under his allowance.[0x1e5d97](https://kovan.etherscan.io/tx/0x1e5d97002d2cc2e1a139f7f36239959d68e717b35f198ca65376f1b59cabf135) **[Issue](https://github.com/tikonoff/gifto/issues/23)**
