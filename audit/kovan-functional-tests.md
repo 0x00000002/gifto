@@ -76,8 +76,8 @@ Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
 ## Unexpected behaviour tests (reverted)
 
 ### Contract owner
- - [ ] Turn on sales when it is already on.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
-<b>FAILED</b>
+ - <strike>[ ] Turn on sales when it is already on.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
+</strike>
  - [ ] Turn off sales when it is already off.[0x06a246](https://kovan.etherscan.io/tx/0x06a246d6e7cecc2d9223dea578472431b0ffec77f9c8c6d3810f14aa23b67d5c)
  **Suggest to verify the variable status before turn it off. Or you just lose your gas if it is already off.**
  - [x] Transfer tokens from one investor to another without enough allowance. [0xf8df16](https://kovan.etherscan.io/tx/0xf8df16329984d6906d0bee6086e29fbe11b4d0ed6f78e482d226065099692637)
