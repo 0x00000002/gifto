@@ -119,7 +119,7 @@ Build: [coveralls.io](https://coveralls.io/github/gabriel-canaan/gifto)
 
 ## Gas Consumption
 
-Upon finalization of the contracts to be used by Gifto, the contracts were assessed on the gas usage of each function to ensure there aren't any unforeseen issues with exceeding the block size GasLimit. A detailed report can be found in [./Gas_Consumption.md](https://github.com/tikonoff/gifto/blob/master/audit/Gas_consumption_report.md).
+Upon finalization of the contracts to be used by Gifto, the contracts were assessed on the gas usage of each function to ensure there aren't any unforeseen issues with exceeding the block size GasLimit. A detailed report can be found in [./gas_consumption_report.md](https://github.com/tikonoff/gifto/blob/master/audit/gas_consumption_report.md).
 
 <br>
 
@@ -131,7 +131,8 @@ Functions were tested according the business scenario and available here [./kova
 
 
 ## Conclusion
-Of the issues we have raised all of them are minor. 
-This crowdsale has a low risk of ethereum being hacked or stolen.
+Of the issues we have raised a few of them are major. There are also some moderate issues that should be resolved. 
+
+This crowdsale has a low risk of ethereum being hacked or stolen but it is strongly recommended to resolve all issues before to proceed with the ICO. 
 
 <br>
