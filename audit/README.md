@@ -102,7 +102,7 @@ Coverage: ???%
 [Coverage screenshot]
 
 
-Build: [travis-ci.org/gabriel-canaan/gifto/builds/1234](https://travis-ci.org/)
+Build: [coveralls.io](https://coveralls.io/github/gabriel-canaan/gifto)
 
 <br>
 
