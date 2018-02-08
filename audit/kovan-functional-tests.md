@@ -106,5 +106,5 @@ Tests are conducted on the Kovan test network, February 5 - 9, 2018, @Bruce Li
  - [x] Transfer an investor's tokens to others.[0xe5c347](https://kovan.etherscan.io/tx/0xe5c3476c3bcccb06c04163e88f4cd502369e7bbedea9eeb806cf538393a5c09a)
  - [x] Buy Gifto tokens with ETH.[0x44459a](https://kovan.etherscan.io/tx/0x44459ab7af839d2bb5234287c63c1b8b96d671bea2c5223bae69c42eb767f8aa)
  - [x] Transfer their own tokens to others.[0xf73ec8](https://kovan.etherscan.io/tx/0xf73ec878e9941567e17457c7585e2656babefec0db4ad2bd54da697222f557b6)
- - [ ] Set allowance to a specific spender for his own account so that the spender can withdraw tokens under this allowance and transfer to spender's account.[0xc03dba](https://kovan.etherscan.io/tx/0xc03dbacddd3cb4279331b4bc1996e3f596123a0f2fdda8b80f4ec28b3bea44a9) **[Issue](https://github.com/tikonoff/gifto/issues/23)**
- - [ ] Withdraw tokens from another investor's account under his allowance.[0x1e5d97](https://kovan.etherscan.io/tx/0x1e5d97002d2cc2e1a139f7f36239959d68e717b35f198ca65376f1b59cabf135) **[Issue](https://github.com/tikonoff/gifto/issues/23)**
+ - [x] Set allowance to a specific spender for his own account so that the spender can withdraw tokens under this allowance and transfer to spender's account.[0xc03dba](https://kovan.etherscan.io/tx/0xc03dbacddd3cb4279331b4bc1996e3f596123a0f2fdda8b80f4ec28b3bea44a9)
+ - [x] Withdraw tokens from another investor's account under his allowance.[0x1e5d97](https://kovan.etherscan.io/tx/0x1e5d97002d2cc2e1a139f7f36239959d68e717b35f198ca65376f1b59cabf135)
