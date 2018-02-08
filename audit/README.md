@@ -97,33 +97,21 @@ List of all issues: [Github](https://github.com/tikonoff/gifto/issues)
 <br>
 
 ## Dynamic Analysis
-Coverage: 16% + 
+[![Coverage Status](https://coveralls.io/repos/github/gabriel-canaan/gifto/badge.svg?branch=gabedojo)](https://coveralls.io/github/gabriel-canaan/gifto?branch=gabedojo)
+
 ```
 -------------------------|----------|----------|----------|----------|----------------|
 File                     |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
 -------------------------|----------|----------|----------|----------|----------------|
-contracts/              |    16.77 |    13.24 |    23.21 |    17.61 |                |
- Gifto.sol              |    15.23 |    12.12 |    19.23 |    16.37 |... 713,714,715 |
- Migration.sol          |       75 |       50 |       75 |       60 |          15,16 |
-contracts/helpers/      |      100 |      100 |        0 |        0 |                |
- MockMultiSigWallet.sol |      100 |      100 |        0 |        0 |             11 |
+ contracts/              |    16.77 |    13.24 |    23.21 |    17.61 |                |
+  Gifto.sol              |    15.23 |    12.12 |    19.23 |    16.37 |... 713,714,715 |
+  Migration.sol          |       75 |       50 |       75 |       60 |          15,16 |
+ contracts/helpers/      |      100 |      100 |        0 |        0 |                |
+  MockMultiSigWallet.sol |      100 |      100 |        0 |        0 |             11 |
 -------------------------|----------|----------|----------|----------|----------------|
 All files                |    16.77 |    13.24 |    22.41 |    17.51 |                |
 -------------------------|----------|----------|----------|----------|----------------|
 ```
-
--------------------------|----------|----------|----------|----------|----------------|
-File                     |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
--------------------------|----------|----------|----------|----------|----------------|
-contracts/              |    16.77 |    13.24 |    23.21 |    17.61 |                |
- Gifto.sol              |    15.23 |    12.12 |    19.23 |    16.37 |... 713,714,715 |
- Migration.sol          |       75 |       50 |       75 |       60 |          15,16 |
-contracts/helpers/      |      100 |      100 |        0 |        0 |                |
- MockMultiSigWallet.sol |      100 |      100 |        0 |        0 |             11 |
--------------------------|----------|----------|----------|----------|----------------|
-All files                |    16.77 |    13.24 |    22.41 |    17.51 |                |
--------------------------|----------|----------|----------|----------|----------------|
-
 
 Build: [coveralls.io](https://coveralls.io/github/gabriel-canaan/gifto)
 
