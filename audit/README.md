@@ -75,6 +75,8 @@ List of all issues: [Github](https://github.com/tikonoff/gifto/issues)
 - **[Explicit UINT256 vs UINT](https://github.com/tikonoff/gifto/issues/12)** - `Best practice` - Lines: [358](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L358),  [375](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L375),  [381](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L381),  [404](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L404)
 - **["Constant" is deprecated](https://github.com/tikonoff/gifto/issues/13)** - `Correctness` - Lines: [666](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L666),  [12](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L12),  [171](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L171)
 - **[Explicitly declare your variables access modifiers](https://github.com/tikonoff/gifto/issues/14)** - `Best practice` - Line: [444](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L444)
+- **[Check variable status before change it](https://github.com/tikonoff/gifto/issues/22)** - `Best practice` - Line: [177](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L177)
+
 
 
 ### Moderate
@@ -89,7 +91,6 @@ List of all issues: [Github](https://github.com/tikonoff/gifto/issues)
  
 ### Major
 - **[Race Condition is possible](https://github.com/tikonoff/gifto/issues/1)** - `Best practice`,`Security` - Line: [132](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L132)
-- **[DoS with block gas limit](https://github.com/tikonoff/gifto/issues/16)** - `Best practice` - Line: [291](https://github.com/gifto-io/GiftoSmartContract/blob/cf1ca1e108b3b616691761c52410756de437cb67/Gifto.sol#L291)
 
 ### Critical
 - None found
