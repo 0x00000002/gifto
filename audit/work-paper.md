@@ -1,4 +1,9 @@
+# Work paper
 
+performed Feb 8, 2019 by [tikonoff](https://github.com/tikonoff)
+
+
+## Gifto
 | Contract |               Function                | Visibility | Constant |  Returns  |                Modifiers                |
 |----------|---------------------------------------|------------|----------|-----------|-----------------------------------------|
 | Gifto    | ()                                    | public     | false    |           | payable                                 |
@@ -23,24 +28,26 @@
 | Gifto    | withdraw()                            | public     | false    | bool      | onlyOwner                               |
 
 
+## MultiSigWallet
 
-|    Contract    |                Function                | Visibility | Constant |     Returns     |                       Modifiers                       |
-|----------------|----------------------------------------|------------|----------|-----------------|-------------------------------------------------------|
-| MultiSigWallet | ()                                     | public     | false    |                 | payable                                               |
-| MultiSigWallet | MultiSigWallet(address,uint)           | public     | false    |                 | validRequirement                                      |
-| MultiSigWallet | addOwner(address)                      | public     | false    |                 | onlyWallet,ownerDoesNotExist,notNull,validRequirement |
-| MultiSigWallet | removeOwner(address)                   | public     | false    |                 | onlyWallet,ownerExists                                |
-| MultiSigWallet | replaceOwner(address,address)          | public     | false    |                 | onlyWallet,ownerExists,ownerDoesNotExist              |
-| MultiSigWallet | changeRequirement(uint)                | public     | false    |                 | onlyWallet,validRequirement                           |
-| MultiSigWallet | submitTransaction(address,uint,bytes)  | public     | false    | transactionId   |                                                       |
-| MultiSigWallet | confirmTransaction(uint)               | public     | false    |                 | ownerExists,transactionExists,notConfirmed            |
-| MultiSigWallet | revokeConfirmation(uint)               | public     | false    |                 | ownerExists,confirmed,notExecuted                     |
-| MultiSigWallet | executeTransaction(uint)               | public     | false    |                 | notExecuted                                           |
-| MultiSigWallet | isConfirmed(uint)                      | public     | true     | bool            |                                                       |
-| MultiSigWallet | addTransaction(address,uint,bytes)     | internal   | false    | transactionId   | notNull                                               |
-| MultiSigWallet | getConfirmationCount(uint)             | public     | true     | count           |                                                       |
-| MultiSigWallet | getTransactionCount(bool,bool)         | public     | true     | count           |                                                       |
-| MultiSigWallet | getOwners()                            | public     | true     |                 |                                                       |
-| MultiSigWallet | getConfirmations(uint)                 | public     | true     | _confirmations  |                                                       |
-| MultiSigWallet | getTransactionIds(uint,uint,bool,bool) | public     | true     | _transactionIds |                                                       |
-| MultiSigWallet | createCoin()                           | external   | false    |                 | onlyWallet                                            |
+
+|    Contract    |                Function                | Visibility | Constant |     Returns     |                       Modifiers                       |              Static Analysis              |   Test Coverage    | Functional Analysis |
+|----------------|----------------------------------------|------------|----------|-----------------|-------------------------------------------------------|-------------------------------------------|--------------------|---------------------|
+| MultiSigWallet | ()                                     | public     | false    |                 | payable                                               | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | MultiSigWallet(address,uint)           | public     | false    |                 | validRequirement                                      | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | addOwner(address)                      | public     | false    |                 | onlyWallet,ownerDoesNotExist,notNull,validRequirement | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | removeOwner(address)                   | public     | false    |                 | onlyWallet,ownerExists                                | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | replaceOwner(address,address)          | public     | false    |                 | onlyWallet,ownerExists,ownerDoesNotExist              | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | changeRequirement(uint)                | public     | false    |                 | onlyWallet,validRequirement                           | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | submitTransaction(address,uint,bytes)  | public     | false    | transactionId   |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | confirmTransaction(uint)               | public     | false    |                 | ownerExists,transactionExists,notConfirmed            | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | revokeConfirmation(uint)               | public     | false    |                 | ownerExists,confirmed,notExecuted                     | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | executeTransaction(uint)               | public     | false    |                 | notExecuted                                           | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | isConfirmed(uint)                      | public     | true     | bool            |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | addTransaction(address,uint,bytes)     | internal   | false    | transactionId   | notNull                                               | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | getConfirmationCount(uint)             | public     | true     | count           |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | getTransactionCount(bool,bool)         | public     | true     | count           |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | getOwners()                            | public     | true     |                 |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | getConfirmations(uint)                 | public     | true     | _confirmations  |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | getTransactionIds(uint,uint,bool,bool) | public     | true     | _transactionIds |                                                       | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
+| MultiSigWallet | createCoin()                           | external   | false    |                 | onlyWallet                                            | :white_check_mark::ballot_box_with_check: | :white_check_mark: | :white_check_mark:  |
