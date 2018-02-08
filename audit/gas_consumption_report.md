@@ -16,7 +16,6 @@ performed by Gabriel Canaan, March 08, 2018
     ✓ verifies that an transfer fires an Transfer event (51696 gas)
     ✓ Removes an investor from the list (59138 gas)
     ✓ Initialising the Gifto contract should trigger a transfer event which generates the tokens
-y: 0
     ✓ Fallback functions  (22511 gas)
     ✓ Function from MultiSigWallet()
     ✓ returns the total supply
