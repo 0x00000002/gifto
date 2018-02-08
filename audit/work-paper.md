@@ -1,8 +1,4 @@
 
-
-.--------------------------------------------------------------------------------------------------------------------------------.
-|                                  /Users/tikonoff/projects/gifto-gabedojo/contracts/Gifto.sol                                   |
-|--------------------------------------------------------------------------------------------------------------------------------|
 | Contract |               Function                | Visibility | Constant |  Returns  |                Modifiers                |
 |----------|---------------------------------------|------------|----------|-----------|-----------------------------------------|
 | Gifto    | ()                                    | public     | false    |           | payable                                 |
@@ -25,11 +21,9 @@
 | Gifto    | approve(address,uint256)              | public     | false    | success   | isTradable                              |
 | Gifto    | allowance(address,address)            | public     | true     | remaining |                                         |
 | Gifto    | withdraw()                            | public     | false    | bool      | onlyOwner                               |
-'--------------------------------------------------------------------------------------------------------------------------------'
 
-.-----------------------------------------------------------------------------------------------------------------------------------------------------------.
-|                                                /Users/tikonoff/projects/gifto-gabedojo/contracts/Gifto.sol                                                |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
 |    Contract    |                Function                | Visibility | Constant |     Returns     |                       Modifiers                       |
 |----------------|----------------------------------------|------------|----------|-----------------|-------------------------------------------------------|
 | MultiSigWallet | ()                                     | public     | false    |                 | payable                                               |
@@ -50,4 +44,3 @@
 | MultiSigWallet | getConfirmations(uint)                 | public     | true     | _confirmations  |                                                       |
 | MultiSigWallet | getTransactionIds(uint,uint,bool,bool) | public     | true     | _transactionIds |                                                       |
 | MultiSigWallet | createCoin()                           | external   | false    |                 | onlyWallet                                            |
-'-----------------------------------------------------------------------------------------------------------------------------------------------------------'
